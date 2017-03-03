@@ -47,33 +47,29 @@ body {
   margin: 0 auto;
   opacity: 0.3; }
 
+.formWrapper {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px; }
+  .formWrapper form {
+    display: block;
+    background: #f4f4f4;
+    border-radius: 5px;
+    height: 100%;
+    padding: 20px; }
+
 .centerContainer {
   max-width: 920px;
   margin: 0 auto; }
   .centerContainer .leftCol {
     width: 50%;
-    float: left; }
-    .centerContainer .leftCol .registerFormWrapper, .centerContainer .leftCol .emailFormWrapper {
-      width: 420px; }
-    .centerContainer .leftCol .registerForm {
-      display: block;
-      background-color: rgba(0, 0, 0, 0.2);
-      height: 460px;
-      width: 420px;
-      border-radius: 5px;
-      margin: 0 auto;
-      position: relative; }
-      .centerContainer .leftCol .registerForm form {
-        background: #f4f4f4;
-        border-radius: 5px;
-        height: 420px;
-        width: 380px;
-        position: absolute;
-        top: 20px;
-        left: 20px; }
+    float: left;
+    width: 420px; }
   .centerContainer .rightCol {
     width: 50%;
-    float: right; }
+    float: right;
+    width: 420px; }
   .centerContainer .formHeader {
     padding: 25px;
     text-align: center;
@@ -83,5 +79,37 @@ body {
     color: #ffffff;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px black; }
+
+.inputWrapper {
+  height: 40px;
+  border: 1px solid #c6c6c6;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative; }
+  .inputWrapper .leftInput {
+    width: 60px;
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative; }
+    .inputWrapper .leftInput img {
+      opacity: 0.15; }
+    .inputWrapper .leftInput:before {
+      content: '';
+      position: absolute;
+      background-color: #c6c6c6;
+      width: 1px;
+      top: 10%;
+      right: 1px;
+      display: block;
+      height: 80%;
+      border-radius: 10px;
+      opacity: 0.6; }
+
+.bottomLogo {
+  margin-top: 50px; }
+  .bottomLogo img {
+    opacity: 0.3; }
 
 /*# sourceMappingURL=style.css.map */
